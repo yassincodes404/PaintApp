@@ -1,0 +1,134 @@
+.tool-bar { -fx-background-color: -studio-surface; -fx-padding: 8; -fx-spacing: 6; }
+.tool-bar .button, .tool-bar .toggle-button { -fx-padding: 7 12; }
+.toggle-button:selected { -fx-background-color: -studio-accent; -fx-text-fill: -studio-background; }
+.canvas-viewport {
+    -fx-background-color: -studio-background;
+    -studio-selection-color: -studio-accent;
+    -studio-grid-color: -studio-grid;
+}
+.status-bar { -fx-background-color: -studio-surface; -fx-padding: 8 12; -fx-alignment: center-left; }
+.status-bar .button { -fx-padding: 4 12; }
+.muted { -fx-text-fill: -studio-muted; }
+.settings-error { -fx-text-fill: -studio-accent; }
+.dialog-pane {
+    -fx-background-color: -studio-background;
+    -fx-border-color: -studio-border;
+    -fx-border-width: 1;
+}
+.dialog-pane:header .header-panel { -fx-background-color: -studio-surface; }
+
+.workspace-icon { -studio-icon-color: -studio-text; }
+.toggle-button:selected .workspace-icon { -studio-icon-color: -studio-background; }
+.icon-button, .tool-bar .icon-button, .status-bar .icon-button {
+    -fx-padding: 6 8;
+    -fx-background-color: transparent;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.icon-button:hover, .tool-bar .icon-button:hover, .status-bar .icon-button:hover {
+    -fx-background-color: -studio-raised;
+}
+.tool-bar .toggle-button:selected, .tool-bar .toggle-button:selected:hover {
+    -fx-background-color: -studio-accent;
+}
+.focus-controls {
+    -fx-background-color: -studio-surface;
+    -fx-background-radius: 9;
+    -fx-border-color: -studio-border;
+    -fx-border-radius: 9;
+    -fx-padding: 3;
+}
+.welcome-scroll, .welcome-scroll > .viewport { -fx-background-color: -studio-background; }
+.welcome-container { -fx-padding: 44 32 42 32; }
+.welcome-eyebrow { -fx-font-weight: bold; -fx-text-fill: -studio-accent; }
+.welcome-title { -fx-font-size: 32; -fx-font-weight: bold; }
+.section-title { -fx-font-size: 16; -fx-font-weight: bold; -fx-padding: 6 0; }
+.welcome-card {
+    -fx-background-color: -studio-surface;
+    -fx-border-color: -studio-border;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-alignment: center-left;
+    -fx-padding: 16 20;
+}
+.welcome-card:hover { -fx-background-color: -studio-raised; }
+.welcome-card:focused { -fx-border-radius: 10; -fx-border-color: -studio-accent; }
+.card-title { -fx-font-size: 15; -fx-font-weight: bold; }
+.recent-project { -fx-padding: 9 16; }
+.themed-dialog:header .header-panel { -fx-padding: 0; }
+.dialog-titlebar {
+    -fx-background-color: -studio-background;
+    -fx-border-color: transparent transparent -studio-border transparent;
+    -fx-padding: 5 8 5 16;
+}
+.dialog-caption { -fx-font-weight: bold; }
+.dialog-heading { -fx-font-size: 19; -fx-font-weight: bold; -fx-padding: 14 16 8 16; }
+.dialog-close:hover { -fx-background-color: #c42b3b; }
+.dialog-close:hover .workspace-icon { -studio-icon-color: white; }
+.editor-command-bar {
+    -fx-padding: 2 8;
+    -fx-alignment: center-left;
+    -fx-background-color: -studio-surface;
+    -fx-border-color: transparent transparent -studio-border transparent;
+}
+.editor-menus { -fx-padding: 0; -fx-background-color: transparent; }
+.editor-menus > .container > .menu-button { -fx-padding: 5 9; }
+.editor-menus > .container > .menu-button > .label { -fx-text-fill: -studio-text; }
+.tool-rail {
+    -fx-padding: 6 5;
+    -fx-alignment: top-center;
+    -fx-background-color: -studio-surface;
+    -fx-border-color: transparent -studio-border transparent transparent;
+}
+.editor-command-bar .icon-button, .tool-rail .icon-button, .status-bar .icon-button {
+    -fx-padding: 4 5;
+    -fx-background-radius: 4;
+}
+.tool-rail .toggle-button:selected, .tool-rail .toggle-button:selected:hover {
+    -fx-background-color: -studio-raised;
+}
+.tool-rail .toggle-button:selected .workspace-icon { -studio-icon-color: -studio-accent; }
+.ink-swatch { -fx-color-label-visible: false; }
+.status-bar {
+    -fx-padding: 1 8;
+    -fx-border-color: -studio-border transparent transparent transparent;
+}
+.status-bar .label { -fx-font-size: 11px; -fx-text-fill: -studio-muted; }
+.preferences-dialog > .content { -fx-padding: 0; }
+.preferences-nav {
+    -fx-background-color: -studio-surface;
+    -fx-border-color: transparent -studio-border transparent transparent;
+    -fx-padding: 7 4 7 5;
+}
+.preferences-nav .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -studio-muted;
+    -fx-padding: 7 9;
+}
+.preferences-nav .list-cell:filled:selected {
+    -fx-background-color: -studio-raised;
+    -fx-text-fill: -studio-text;
+}
+.preferences-detail { -fx-padding: 14 17; }
+.preferences-section { -fx-font-size: 16px; -fx-font-weight: bold; }
+.themed-dialog > .button-bar .button { -fx-padding: 5 14; -fx-background-radius: 4; }
+.pen-nib-outline {
+    -fx-fill: transparent;
+    -fx-stroke: -studio-text;
+    -fx-stroke-width: 1.15;
+    -fx-stroke-line-join: round;
+}
+.pen-rack { -fx-alignment: center; }
+.pen-preset, .pen-menu {
+    -fx-background-color: transparent;
+    -fx-background-radius: 4;
+    -fx-padding: 3 6;
+}
+.pen-preset:hover, .pen-preset:selected, .pen-menu:hover {
+    -fx-background-color: -studio-raised;
+}
+.pen-preset:selected {
+    -fx-border-color: -studio-accent;
+    -fx-border-radius: 4;
+    -fx-border-insets: 1;
+}

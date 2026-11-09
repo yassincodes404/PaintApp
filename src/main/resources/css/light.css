@@ -1,0 +1,13 @@
+.root {
+    -studio-background: #f8faff;
+    -studio-surface: #edf1fa;
+    -studio-raised: #e1e7f2;
+    -studio-text: #19243a;
+    -studio-muted: #53627c;
+    -studio-border: #c8d2e3;
+    -studio-accent: #405cd6;
+    -studio-grid: rgba(100, 110, 130, 0.2);
+    -fx-base: -studio-surface;
+    -fx-background: -studio-background;
+    -fx-control-inner-background: white;
+}
